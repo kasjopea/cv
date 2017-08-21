@@ -1,0 +1,769 @@
+@import url('reset.css');
+@import url('box-sizing.css');
+
+
+body {
+	background-color: rgb(241,239,237);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.progressBar {
+	height: 13px;
+	border: 2px solid rgb(204,204,204);
+	border-radius: 13px;
+	background-color: rgb(239,236,233) ;
+}
+
+#progressIndex1 {
+	width: 80%;
+	height: 9px;
+	background-color: rgb(2,112,112);
+	border-radius: 9px;
+}
+#progressIndex2 {
+	width: 85%;
+	height: 9px;
+	background-color: rgb(4,96,96);
+	border-radius: 9px;
+}
+#progressIndex3 {
+	width: 95%;
+	height: 9px;
+	background-color: rgb(7,76,76);
+	border-radius: 9px;
+}
+
+#progressIndex4 {
+	width: 45%;
+	height: 9px;
+	background-color: rgb(0,152,152);
+	border-radius: 9px;
+}
+
+#progressIndex5 {
+	width: 33%;
+	height: 9px;
+	background-color: rgb(2,180,181);
+	border-radius: 9px;
+}
+
+#progressIndex6 {
+	width: 55%;
+	height: 9px;
+	background-color: rgb(0,131,132);
+	border-radius: 9px;
+}
+
+.color1 {
+	background-color: #027d7d;
+	width: 235px;
+	height: 235px;
+	line-height: 235px;
+	top: 131px;
+	left: 144px;
+	font-size: 29px;
+	opacity: 0.85;
+}
+
+.color2 {
+	background-color: #08bcbd;
+	width: 169px;
+	height: 169px;
+	line-height: 169px;
+	left:0px;
+	top:206px;
+	font-size: 20px;
+	opacity: 0.85;
+}
+
+.color3 {
+	background-color: #03a0a1;
+	width: 148px;
+	height: 148px;
+	line-height: 148px;
+	left:50px;
+	top:96px;
+	font-size: 26px;
+	opacity: 0.85;
+}
+
+.color4 {
+	background-color: #084444;
+	width: 144px;
+	height: 144px;
+	line-height: 144px;
+	left:320px;
+	top:275px;
+	font-size: 23px;
+	opacity: 0.85;
+}
+
+h1 {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 34px;
+	color: rgb(3,81,89);
+	padding-left: 20px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: rgb(3,81,89);
+	display: inline-block;
+	margin-left: 5px;
+}
+
+h3 {
+	font-size: 31px;
+	font-weight: thin;
+	margin-top: 13px;
+	color: rgb(1,52,64);
+	padding-left: 20px;
+}
+
+#educationData .circle {
+	width: 23px;
+	height: 23px;
+	border: 3px solid rgb(8,65,65);
+	border-radius: 23px;
+	background-color: white;
+	position: absolute;
+}
+
+#educationData p{
+	color: rgb(76,177,177);
+	padding-top: 8px;
+	padding-bottom: 9px;
+	text-align: center;
+	border-radius: 11px;
+	font-size: 22px;
+}
+
+#educationData .thin {
+	font-weight: 300;
+	font-size: 20px;
+	display: block;
+	padding: 5px;
+}
+
+#educationData .bg {
+	background-color: rgb(76,177,177);
+	color: rgb(239,236,233);
+}
+
+
+ @media only screen and (max-width:1199px) {
+
+ 	#secretData p {
+	width: 80%;
+}
+
+ 	h2 {
+ 		margin-top:5px;
+ 		margin-bottom: 15px;
+ 		text-align: center;
+ 		display: block;
+ 	}
+
+ 	h1, h3 {
+ 		text-align: center;
+ 	}
+
+ 	h1 {
+ 		font-size: 35px;
+ 		margin-bottom: 5px;
+ 	}
+
+ 	h3 {
+ 		font-size: 25px;
+ 	}
+
+
+ 	.place, .school {
+ 		margin-top:7px;
+ 	}
+
+ 	#educationData .places {
+ 		margin:0;
+ 	}
+
+ 	.time {
+ 		margin-top: 45px;
+ 	}
+
+	#educationData .circle {
+		margin-top: 5px;
+	}
+
+ 	#educationData .place {
+ 		font-size: 20px;
+ 	}
+
+	#wrapper {
+	width: 100%;
+	}
+
+	#personalData div {
+	width:100%;
+	marginright:auto;
+	margin-left:auto;
+	padding: 10px;
+	}
+
+	#personalData #secretData {
+	width:256px;
+	marginright:auto;
+	margin-left:auto;
+	padding: 10px;
+	}
+
+	#personalData #secretData p {
+		text-align: right;
+	}
+
+#educationData div {
+	width:70%;
+	margin-right: 15%;
+	margin-left:15%;
+	text-align: center;
+}
+
+#educationData .hr {
+	display: none;
+}
+
+	#experienceData #experienceHeader {
+	margin:0;
+	padding: 0;
+	height: 0px;
+	top: -105px;
+	width: 100%;
+}
+
+#experienceData div {
+	position: relative;
+	width: 96%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+#experienceData {
+	border-right: 6px solid rgb(8,65,65);
+}
+
+#experienceData div div {
+	width: 90%;
+	margin-right: 8%;
+	margin-left: 2%;
+	margin-top: 15px;
+	background-color: white;
+}
+
+#experienceData table {
+	width: 100%;
+}
+
+table td {
+ width: 72%;
+}
+
+#experienceData table .short {
+	width: 28%;
+	text-align: center;
+}
+
+table .left {
+	border-right: 3px solid rgb(204,204,204);
+	padding-right: 6px;
+}
+
+#experienceData p {
+	color: rgb(196,195,194);
+	font-size: 18px;
+	line-height: 26px;
+}
+
+#experienceData h4 {
+	font-size: 18px;
+	color: rgb(24,24,24);
+}
+
+.bubble
+{
+position: relative;
+padding: 5px;
+background: rgb(245,244,242);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 19px 0 19px 25px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+right: -25px;
+top: 52px;
+}
+
+
+	.progressBar {
+	width: 96%;
+	margin-right: 2%;
+	margin-left: 2%;
+	}
+
+	#skillsData {
+	width: 90%;
+	margin-right: 6%;
+	margin-left: 4%;
+	}
+
+	#skillsData table {
+	width: 100%;
+	margin: 0;
+	}
+
+	#skillsData table tr td {
+	padding: 13px 0;
+	}
+	#skillsData table tr td:first-child {
+	width: 15%;
+	padding-left: 8px;
+	padding-right: 8px;
+	}
+
+	#skillsData table tr td:last-child {
+	//width: 315px;
+	}
+
+	#interests {
+	position: relative;
+	width: 96%;
+	float: left;
+	margin-right:2%;
+	margin-left:2%;
+}
+
+.color1 {
+	width: 185px;
+	height: 185px;
+	line-height: 185px;
+	top: 136px;
+	left: 100px;
+	}
+
+	.color2 {
+	width: 119px;
+	height: 119px;
+	line-height: 119px;
+	top:166px;
+	}
+
+	.color3 {
+	width: 98px;
+	height: 98px;
+	line-height: 98px;
+	}
+
+	.color4 {
+	width: 94px;
+	height: 94px;
+	line-height: 94px;
+	top:286px;
+	left:160px;
+}
+
+#educationData .circle {
+	position: static;
+}
+
+}
+
+ //koniec telefonu
+
+
+#personalData div:nth-child(3){
+	text-align: right;
+}
+
+#personalData div {
+	float: left;
+}
+#personalData p {
+	text-align: right;
+	color: rgb(165,164,163);
+	font-size: 18px;
+	margin-top: 28px;
+}
+
+#personalData #photo {
+	height: 213px;
+	width: 213px;
+	border-radius: 213px;
+	background-color: grey;
+	background-image: url("../img/foto.jpg");
+	background-size: cover;
+}
+
+hr {
+	border: 1px solid rgb(229,234,236);
+	width:1035px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#educationData {
+	position: relative;
+}
+
+
+#educationData p{
+	color: rgb(76,177,177);
+	padding-top: 8px;
+	padding-bottom: 9px;
+	text-align: center;
+	border-radius: 11px;
+	font-size: 22px;
+}
+
+#educationData .thin {
+	font-weight: 300;
+	font-size: 20px;
+	display: block;
+	padding: 5px;
+}
+
+
+#educationData .bg {
+	background-color: rgb(76,177,177);
+	color: rgb(239,236,233);
+}
+
+
+
+#eduTime div {
+	color: rgb(76,177,177);
+	text-align: center;
+}
+
+#educationData .hr {
+	background-color: rgb(8,65,65);
+	height: 7px;
+	margin: 23px 105px 23px 96px;
+	width: 904px;
+}
+
+
+#experienceData .dateColor {
+	font-size: 40px;
+	color : rgb(1,120,120);
+}
+
+#interests div {
+	opacity: 0.85;
+	position: absolute;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+}
+
+
+@media only screen and (min-width:801px) and (max-width:1199px) {
+
+
+
+/*, #experienceData, #educationData {
+	position: relative;
+	width:38%;
+	margin-right: 6%;
+	margin-left:6%;
+	float: left;
+}*/
+
+#skillsData, #interests  {
+	position: relative;
+	width:38%;
+	margin-right: 6%;
+	margin-left:6%;
+	float: left;
+	}
+
+}
+
+
+ @media only screen and (min-width:1200px) {
+ 	#wrapper {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 1700px;
+	background-color: rgb(241,239,237);
+	padding: 47px 50px 0 50px;
+}
+
+#personalData #photo {
+	margin: 20px 76.83px;
+}
+
+#secretData p {
+	width: 377px;
+}
+
+#circle1, #circle2, #circle3, #circle4 {
+	top: 503.5px;
+}
+
+#educationData h2 {
+	margin-bottom: 68px;
+}
+
+#educationData div , #educationData div div {
+	float: left;
+}
+
+#educationData {
+	position: static;
+}
+
+#educationData div {
+	width: 100%;
+}
+
+#educationData>div>div:first-child {
+	width: 194px;
+	margin-left: 10px;
+	margin-right: 93px;
+}
+
+#educationData>div>div:nth-child(2) {
+	width: 178px;
+	margin-right: 98px;
+}
+
+#educationData>div>div:nth-child(3) {
+	width: 194px;
+	margin-right: 112px;
+}
+
+#educationData>div>div:nth-child(4) {
+	width: 221px;
+}
+
+#eduTime {
+	position: relative;
+}
+
+#eduTime div {
+	position: relative;
+}
+
+#experienceHeader {
+	position: relative;
+	width: 280px;
+	left: 565px;
+	top: 130px;
+	/*margin:0;
+	margin-left: 20px;
+	padding: 0;
+	height: 0px;
+	top: -105px;*/
+}
+
+#experienceData div {
+	margin-top: 85px;
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+#experienceData>div:first-child {
+	border-right: 6px solid rgb(8,65,65);
+}
+
+#experienceData>div:nth-child(2){
+	margin-top: 190px;
+	margin-bottom: 105px;
+}
+
+#experienceData>div:nth-child(2)>div {
+	margin-left: 40px;
+}
+
+
+#experienceData div div {
+	width: 500px;
+	height: 140px;
+	padding: 20px;
+	margin: 39px 0;
+	background-color: white;
+}
+
+#experienceData table {
+	width: 100%;
+}
+
+table td {
+ width: 72%;
+}
+
+#experienceData table .short {
+	width: 28%;
+	text-align: center;
+}
+
+table .left {
+	border-right: 3px solid rgb(204,204,204);
+	padding-right: 6px;
+}
+
+#experienceData p {
+	color: rgb(196,195,194);
+	font-size: 18px;
+	line-height: 26px;
+}
+
+#experienceData h4 {
+	font-size: 18px;
+	color: rgb(24,24,24);
+}
+
+.bubble
+{
+position: relative;
+width: 250px;
+height: 120px;
+padding: 0px;
+background: rgb(245,244,242);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 19px 0 19px 25px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+right: -25px;
+top: 52px;
+}
+
+.bubbleleft:after {
+	border-width: 19px 25px 19px 0;
+	left: -25px;
+}
+
+#interests {
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+.progressBar {
+	width: 315px;
+}
+
+#skillsData {
+	margin-top: 80px;
+	width: 50%;
+	float: left;
+	padding-right: 60px;
+}
+
+#skillsData table {
+	width: 100%;
+	margin: 0;
+}
+
+#skillsData h2 {
+	margin-bottom: 43px;
+	margin-top: 13px;
+}
+
+#skillsData table tr td {
+	padding: 13px 0;
+}
+#skillsData table tr td:first-child {
+	width: 180px;
+	padding-left: 8px;
+}
+
+#skillsData table tr td:last-child {
+	width: 315px;
+}
+
+#interests {
+	width:40%;
+	margin-left: 80px;
+	text-align: center;
+}
+
+#personalData #secretData {
+	text-align: right;
+	width: 413px;
+}
+
+}
+
+#secretData p img {
+	margin-left: 10px;
+}
+
+#secretData p {
+	display: inline-block;
+	margin-right:10px;
+}
+
+#secretData>img:nth-child(2) {
+	position:relative;
+	bottom: -1px;
+}
+
+#secretData>img:nth-child(4) {
+	position:relative;
+	bottom: -5px;
+	left: 5px;
+}
+
+#secretData>img:nth-child(8) {
+	position:relative;
+	top: -19px;
+}
+
+#x {
+	width:10px;
+	height: 0px;
+}
+
+#experienceData .bubbleleft table td:last-child {
+	padding-left:14px; 
+	padding-right: 14px;
+}
+
+
+ @media only screen and (max-width:799px) {
+.section {
+ 		display: block;
+ 		margin-top: 15px;
+ 	}
+}
